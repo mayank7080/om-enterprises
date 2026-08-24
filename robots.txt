@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
+
+Sitemap: https://mayank7080.github.io/om-enterprises/sitemap.xml
