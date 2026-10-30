@@ -94,7 +94,7 @@ function renderProducts(filter){
   const img=p.image ? '<img src="assets/products/'+encodeURIComponent(p.image).replace(/%2F/g,'/')+'" alt="'+p.name+'" loading="lazy" onerror="this.parentElement.classList.add(\'no-image\');this.remove()">' : '';
   const msg=encodeURIComponent("Hello OM Enterprises, I want to enquire about "+p.name+". Please share details and availability.");
   return '<article class="product-card">'+
-   '<div class="product-photo '+(p.image?'':'no-image')+'">'+img+'<span>'+p.category+'</span></div>'+
+   '<div class="product-photo '+(p.image?'':'no-image')+'">'+img+'</div>'+
    '<div class="product-info"><p class="product-kicker">OM ENTERPRISES CATALOGUE</p><h3>'+p.name+'</h3><p class="product-desc">'+p.desc+'</p><a href="https://wa.me/919194180624?text='+msg+'">Enquire on WhatsApp <span>↗</span></a></div></article>';
  }).join("");
 }
